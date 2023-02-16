@@ -1,0 +1,92 @@
+@tailwind base;
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+.App{
+  @apply text-center font-sans
+}
+.App .comment-avatar{
+  @apply bg-red-300 w-8 h-8 p-1 m-1 rounded-t-[66px] rounded-br-[67px] rounded-l-none
+}
+/* 
+Unable to Convert:
+border-radius: 66px 67px 67px 0px; */
+.App .comment-avatar img {
+  @apply w-full h-full rounded-[50px]
+}
+/* w-full h-full
+Unable to Convert:
+border-radius: 50px; */
+.button-wrapper button{
+  @apply h-10 m-2 p-1 z-10 max-w-xs
+}
+/* h-10 m-2 p-1
+Unable to Convert:
+z-index: 1;
+max-width: 200px; */
+.excalidraw .App-menu_top .buttonList{
+  @apply flex
+}
+
+.excalidraw-wrapper{
+  @apply mx-28 my-6 relative overflow-hidden h-80v 
+}
+
+/* Unable to Convert:
+height: 800px;
+:root[dir="ltr"]  */
+.excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left{
+  @apply scale-0
+}
+/* Unable to Convert:
+transform: none; */
+.excalidraw .panelColumn{
+  @apply text-left
+}
+
+.export-wrapper{
+  @apply flex flex-col m-12
+}
+
+.export-wrapper__checkbox{
+  @apply flex
+}
+
+/* .excalidraw{
+  @apply 
+}
+Unable to Convert:
+--color-primary: #faa2c1;
+--color-primary-darker: #f783ac;
+--color-primary-darkest: #e64980;
+--color-primary-light: #fcc2d7; */
+.excalidraw button.custom-element{
+  @apply w-8 h-8 mx-0 my-2
+}
+
+/* Unable to Convert:
+margin: 0 8px; */
+.excalidraw .custom-footer{
+  @apply p-0.5
+}
+.excalidraw .custom-element{
+  @apply p-0.5
+}
