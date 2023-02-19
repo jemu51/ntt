@@ -74,7 +74,7 @@ const Index = () => {
               <div className="flex items-center justify-center">
                 <img
                   className="h-4/6"
-                  src={`/input.png`}
+                  src={`/favicon-32x32.png`}
                   alt="Live Cam Web Application"
                 />
               </div>
