@@ -28,7 +28,9 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-      - run: pnpm build-prod
+      - run: pnpm clean
+      - run: pnpm build
+      - run: pnpm export
 
   test:
     strategy:
