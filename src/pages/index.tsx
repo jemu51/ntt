@@ -156,7 +156,10 @@ const Index = () => {
 
         <div className="border-t border-gray-300 py-8 text-center text-sm">
           © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{" "}
-          <a href="https://github.com/jemu51/ntt">Live Cam Web</a>.
+          <a data-testid="githubLink" href="https://github.com/jemu51/ntt">
+            Live Cam Web
+          </a>
+          .
         </div>
       </div>
     </div>

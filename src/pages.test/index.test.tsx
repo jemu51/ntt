@@ -10,7 +10,7 @@ describe("Index page", () => {
     it("should have a script cdn link of tw-elements", () => {
       render(<Index />);
 
-      const twElementsCdn = screen.getByTestId("twElementsCdn");
+      const githubLink = screen.getByTestId("githubLink");
 
       /*
        * PLEASE READ THIS SECTION
@@ -18,9 +18,9 @@ describe("Index page", () => {
        * The link doesn't need to appear on every pages, one link on one page is enough.
        * Thank you for your support it'll mean a lot for us.
        */
-      expect(twElementsCdn).toHaveAttribute(
-        "src",
-        "https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"
+      expect(githubLink).toHaveAttribute(
+        "href",
+        "https://github.com/jemu51/ntt"
       );
     });
   });
