@@ -69,7 +69,7 @@ const Index = () => {
       <Meta title="Live Cam" description="Live Cam Web Application." />
       <div className="mx-auto min-h-screen max-w-screen-md">
         <div className="h-full">
-          <div className="pt-16 pb-8">
+          <div className="pb-8 pt-16">
             <div className="flex space-x-2">
               <div className="flex items-center justify-center">
                 <img
@@ -92,14 +92,14 @@ const Index = () => {
                   ref={webcamButtonRef}
                   type="button"
                   // eslint-disable-next-line tailwindcss/no-custom-classname
-                  className="align-center flex rounded bg-blue-600 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+                  className="align-center flex rounded bg-blue-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
                 >
                   Start webcam
                 </button>
               </li>
               <li className="mr-6 border-b border-gray-300">
                 <button
-                  className="align-center flex rounded bg-blue-600 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+                  className="align-center flex rounded bg-blue-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
                   onClick={hangupHandler}
                   ref={hangupButtonRef}
                 >
@@ -108,7 +108,7 @@ const Index = () => {
               </li>
               <li className="mr-6 border-b border-gray-300">
                 <a
-                  className="align-center flex rounded bg-blue-600 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
+                  className="align-center flex rounded bg-blue-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
                   ref={videoDownloadRef}
                   href={videoUrl!}
                 >

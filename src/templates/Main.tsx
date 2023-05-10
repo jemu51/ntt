@@ -18,7 +18,7 @@ const Main = (props: IMainProps) => {
 
       <div className="mx-auto max-w-screen-md">
         <div className="border-b border-gray-300">
-          <div className="pt-16 pb-8">
+          <div className="pb-8 pt-16">
             <div className="flex space-x-2">
               <div className="flex items-center justify-center">
                 <img
