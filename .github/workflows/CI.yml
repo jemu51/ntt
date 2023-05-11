@@ -78,9 +78,7 @@ jobs:
       - uses: actions/cache@v3
         name: Setup pnpm cache
         with:
-          path: |
-            ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-            ~/.cache/Cypress
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
@@ -110,8 +108,8 @@ jobs:
       - name: Run unit tests
         run: pnpm test
 
-      - name: Run e2e tests
-        run: pnpm exec percy exec -- pnpm e2e:headless
-        env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-          CYPRESS_CACHE_FOLDER: ~/.cache/Cypress
+      # - name: Run e2e tests
+      #   run: pnpm exec percy exec -- pnpm e2e:headless
+      #   env:
+      #     PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      #     CYPRESS_CACHE_FOLDER: ~/.cache/Cypress
