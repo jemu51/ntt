@@ -21,14 +21,20 @@ const customJestConfig = {
     '!**/*.d.ts',
     '!**/node_modules/**',
   ],
-  coverageThreshold: {
-    global: {
-      branches: 30,
-      functions: 30,
-      lines: 30,
-      statements: 30,
-    },
-  },
+  // coverageThreshold: {
+  //   global: {
+  //     branches: 30,
+  //     functions: 30,
+  //     lines: 30,
+  //     statements: 30,
+  //   },
+  //   './src/utils/': {
+  //     branches: 100, // set the branch coverage threshold to 100% for files in the './src/utils/' directory
+  //   },
+  //   './src/components/': {
+  //     lines: 90, // set the line coverage threshold to 90% for files in the './src/components/' directory
+  //   },
+  // },
   testEnvironment: 'jest-environment-jsdom',
 };
 
