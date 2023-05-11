@@ -139,9 +139,7 @@ const Index = () => {
             <div className="flex justify-items-start">
               <div className="videos">
                 <span>
-                  <h1 id="subtitle">
-                    <span> Local Stream</span>
-                  </h1>
+                  <h1 id="subtitle">Local Stream</h1>
                   <video
                     className="webcamVideo"
                     ref={webcamVideoRef}
@@ -157,7 +155,7 @@ const Index = () => {
         <div className="border-t border-gray-300 py-8 text-center text-sm">
           © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{" "}
           <a data-testid="githubLink" href="https://github.com/jemu51/ntt">
-            Live Cam Web
+            NTT
           </a>
           .
         </div>

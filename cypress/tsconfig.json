@@ -3,8 +3,9 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es5", "dom"],
+    "noEmit": false,
+    "sourceMap": false,
     "types": ["node", "cypress", "@percy/cypress", "@testing-library/cypress"],
-
     "isolatedModules": false
   },
   "include": ["**/*.ts"],
