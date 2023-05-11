@@ -114,3 +114,4 @@ jobs:
         run: pnpm exec percy exec -- pnpm e2e:headless
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          CYPRESS_CACHE_FOLDER: ~/.cache/Cypress
